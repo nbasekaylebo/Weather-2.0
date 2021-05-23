@@ -46,9 +46,9 @@ footer {
 }
 
 .unit {
-  font-family: "Inter", sans-serif;
   position: relative;
   top: -34px;
+  font-family: "Inter", sans-serif;
 }
 
 .search-form {
