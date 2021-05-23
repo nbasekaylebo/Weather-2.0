@@ -58,25 +58,30 @@
           </div>
         </form>
         <h1 id="city"></h1>
-        <ul>
+        <ul class="date-descrip">
           <li id="dateTime"></li>
           <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
               <div class="float-left">
                 <span class="temperature" id="temperature"></span>
-                <span class="unit">°C</span>
+                <span class="unit"></span>
+                  <a href="#" id="celcius-link" class="active">°C</a> ⎮
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
+
+          <div class="col-6">
+            <ul id="pre-hum-wi">
+              <li>Precipitation:<span id="precipitation"></span>%</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
