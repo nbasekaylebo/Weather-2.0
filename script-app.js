@@ -35,14 +35,15 @@ function displayWeatherInfo(response) {
     response.data.wind.speed
   );
 
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celciusTemperature = response.data.main.temp;
 }
