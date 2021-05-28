@@ -10,6 +10,12 @@ h1 {
   margin-bottom: 0;
 }
 
+img {
+  margin-right: 5px;
+  height: 250px;
+  width: 300px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -38,21 +44,15 @@ footer {
 }
 
 .weather-app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #bed8fa;
+  border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
 
 .overview {
   margin-bottom: 20px;
-}
-
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
 }
 
 .weather-temperature strong {
@@ -76,4 +76,27 @@ footer {
   color: #000000;
   text-decoration: none;
   cursor: default;
+}
+
+.mini-card {
+  padding-bottom: 20px;
+  margin: 50px 0px 50px 0px;
+}
+
+.weather-days {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 1px;
+}
+
+.max-temp {
+  margin-bottom: 1px;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+}
+
+.min-temp {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
 }

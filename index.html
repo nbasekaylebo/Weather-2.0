@@ -28,7 +28,7 @@
       <div class="weather-app">
         <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-9">
+            <div class="col-6">
               <input
                 type="search"
                 placeholder="City"
@@ -40,46 +40,122 @@
             <div class="col-3">
               <input
                 type="submit"
-                value="search"
-                class="btn btn-secondary w-100"
+                value="Search"
+                class="btn btn-outline-secondary w-100"
               />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-outline-secondary w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
             </div>
           </div>
         </form>
-        <div class="overview">
-          <h1 id="city"></h1>
-          <ul>
-            <li>Last updated: <span id="date"></span></li>
-            <li id="description"></li>
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-              <img src="" id="icon" class="float-left" />
-              <div class="float-left">
-                <strong id="temperature"></strong
-                ><span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a> ⎮
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+        <img src="" id="icon" class="col-5" align="right" />
+        <div class="col-6 mini-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="overview">
+                <h1 id="city"></h1>
+                <ul>
+                  <li>Last updated: <span id="date"></span></li>
+                  <li id="description"></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-7">
+                  <div class="clearfix weather-temperature">
+                    <div class="float-left">
+                      <strong id="temperature"></strong
+                      ><span class="units">
+                        <a href="#" id="celsius-link" class="active">°C</a> ⎮
+                        <a href="#" id="fahrenheit-link">°F</a></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <ul>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> km/h</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
-          </div>
         </div>
+
+        <div class="row">
+            <div class="col-2 weather-days">
+              <h6>
+                Sun
+              </h6>
+              <p class="weather-emoji">
+                🌧
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
+            <div class="col-2 weather-days">
+              <h6>
+                Mon
+              </h6>
+              <p class="weather-emoji">
+                ⛅️
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
+            <div class="col-2 weather-days">
+              <h6>
+                Tue
+              </h6>
+              <p class="weather-emoji">
+                🌧
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
+            <div class="col-2 weather-days">
+              <h6>
+                Wed
+              </h6>
+              <p class="weather-emoji">
+                ⛅️
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
+            <div class="col-2 weather-days">
+              <h6>
+                Thu
+              </h6>
+              <p class="weather-emoji">
+                ⛅️
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
+            <div class="col-2 weather-days">
+              <h6>
+                Fri
+              </h6>
+              <p class="weather-emoji">
+                ⛅️
+              </p>
+              <p class="max-temp">9°C</p>
+              <p class="min-temp">3°C</p>
+            </div>
       </div>
     </div>
     <footer>
       <a href="https://github.com/nbasekaylebo/Weather-2.0" target="_blank"
         >Open-source code</a
       >
-      on Github by Nastassja Basekay.
+      on Github by Nastassja Basekay ☀️.
     </footer>
     <script src="src/script-app.js"></script>
   </body>
