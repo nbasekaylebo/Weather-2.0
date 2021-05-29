@@ -45,13 +45,14 @@ footer {
 }
 
 .weather-app-wrapper {
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 668px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 30px auto;
 }
 
 .weather-app {
   padding: 20px;
+  max-width: 668px;
 }
 
 .card {
@@ -114,6 +115,12 @@ footer {
 }
 
 .btn {
+  color: #ffffff;
+  border-color: #7a97b4;
+}
+
+.btn:hover {
+  background: #7a97b4;
   color: #ffffff;
   border-color: #7a97b4;
 }
