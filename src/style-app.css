@@ -83,20 +83,21 @@ footer {
   margin: 50px 0px 50px 0px;
 }
 
-.weather-days {
+.weather-forecast {
+  margin-top: 20px;
   text-align: center;
-  font-family: "Inter", sans-serif;
-  padding-bottom: 1px;
+  color: #000000;
 }
 
-.max-temp {
-  margin-bottom: 1px;
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.4;
 }
 
-.min-temp {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+.weather-forecast-temp-min {
+  opacity: 0.4;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
