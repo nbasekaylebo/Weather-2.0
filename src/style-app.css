@@ -4,6 +4,7 @@ body {
 
 div .background {
   background-image: url("https://images.unsplash.com/photo-1619782532574-38acd218a71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  background-repeat: no-repeat;
   max-width: 668px;
   padding: 0;
   border-radius: 4px;
