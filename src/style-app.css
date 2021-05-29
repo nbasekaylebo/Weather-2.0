@@ -2,18 +2,19 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+div .background {
+  background-image: url("https://images.unsplash.com/photo-1619782532574-38acd218a71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  max-width: 668px;
+  padding: 0;
+  border-radius: 4px;
+}
+
 h1 {
-  color: #878787;
+  color: #284d63;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 0;
-}
-
-img {
-  margin-right: 5px;
-  height: 250px;
-  width: 300px;
 }
 
 ul {
@@ -26,7 +27,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: #e2e1e1;
+  color: #284d63;
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
@@ -43,19 +44,33 @@ footer {
   font-weight: 100;
 }
 
-.weather-app {
-  max-width: 700px;
+.weather-app-wrapper {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 668px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
+}
+
+.card {
+  border: none;
+  opacity: 0.6;
 }
 
 .overview {
   margin-bottom: 20px;
 }
 
+.todays-icon {
+  margin-right: 5px;
+  height: 250px;
+  width: 300px;
+}
+
 .weather-temperature strong {
+  color: #284d63;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -67,15 +82,9 @@ footer {
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: #000000;
+.weather-temperature {
+  color: #284d63;
   text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  color: #000000;
-  text-decoration: none;
-  cursor: default;
 }
 
 .mini-card {
@@ -86,18 +95,25 @@ footer {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000000;
+  color: #284d63;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.4;
+  color: #284d63;
+  opacity: 0.7;
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.4;
+  color: #284d63;
+  opacity: 0.7;
 }
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+.btn {
+  color: #ffffff;
+  border-color: #7a97b4;
 }

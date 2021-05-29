@@ -36,12 +36,10 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
-
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index > 0 && index < 7) {
       forecastHTML =
         forecastHTML +
         `
@@ -64,7 +62,7 @@ function displayForecast(response) {
         )}° </span>
       </div>
     </div>
-  </div>
+  
   `;
     }
   });
@@ -133,4 +131,4 @@ currnetLocationButton.addEventListener("click", getCurrentLocation);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesubmit);
 
-search("New York");
+search("London");
