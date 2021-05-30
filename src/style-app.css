@@ -97,17 +97,17 @@ footer {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #284d63;
+  color: #000;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  color: #284d63;
+  color: ##050607;
   opacity: 0.7;
 }
 
 .weather-forecast-temp-min {
-  color: #284d63;
+  color: #000;
   opacity: 0.7;
 }
 
