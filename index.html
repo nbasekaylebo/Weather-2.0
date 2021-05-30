@@ -27,7 +27,7 @@
           <div class="weather-app">
             <form id="search-form" class="mb-3">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
                   <input
                     type="search"
                     placeholder="Check your city"
@@ -36,14 +36,14 @@
                     autocomplete="off"
                   />
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-sm-2">
                   <input
                     type="submit"
                     value="Search"
                     class="btn btn-outline-secondary w-90"
                   />
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-sm-2">
                   <button
                     class="btn btn-outline-secondary w-90"
                     id="current-location-button"
@@ -53,41 +53,38 @@
                 </div>
               </div>
             </form>
-            <img
-              class="todays-icon"
-              src=""
-              id="icon"
-              class="col-4"
-              align="right"
-            />
-            <div class="col-6 mini-card">
-              <div class="card">
-                <div class="card-body">
-                  <div class="overview">
-                    <h1 id="city"></h1>
-                    <ul>
-                      <li><span id="date"></span></li>
-                      <li id="description"></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="clearfix weather-temperature">
-                        <div class="float-left">
-                          <strong id="temperature"></strong
-                          ><span class="units"> °C</span>
+
+            <div class="row flex-column-reverse flex-sm-row">
+              <div class="col-12 col-sm-6 mini-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="overview">
+                      <h1 id="city"></h1>
+                      <ul>
+                        <li><span id="date"></span></li>
+                        <li id="description"></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="clearfix weather-temperature">
+                          <div class="float-left">
+                            <strong id="temperature"></strong
+                            ><span class="units"> °C</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-6">
-                      <ul>
-                        <li>Humidity: <span id="humidity"></span>%</li>
-                        <li>Wind: <span id="wind"></span> km/h</li>
-                      </ul>
+                      <div class="col-6">
+                        <ul>
+                          <li>Humidity: <span id="humidity"></span>%</li>
+                          <li>Wind: <span id="wind"></span> km/h</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <img class="todays-icon col-12 col-sm-4" src="" id="icon" />
             </div>
             <div class="weather-forecast" id="forecast"></div>
           </div>
